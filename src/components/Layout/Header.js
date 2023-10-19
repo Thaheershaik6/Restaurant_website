@@ -4,7 +4,6 @@ import mealsImage from '../assets/Header-image.jpg';
 
 import classes from './Header.module.css';
 import HeaderCartButton from './HeaderCratButton';
-import Summary from '../UI/Summary';
 
 const Header = (props) => {
 
@@ -16,9 +15,7 @@ const Header = (props) => {
                 </header>
             <div className={classes['main-image']}>
             <img src={mealsImage} alt='A table of full delicious food!'/>
-            </div>
-            <Summary></Summary>
-            
+            </div>            
         </div>
     );
 }
