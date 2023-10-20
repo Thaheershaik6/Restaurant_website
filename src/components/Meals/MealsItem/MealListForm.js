@@ -1,15 +1,20 @@
 import React from "react";
 
+import Input from "../../UI/Input";
 import classes from './MealListForm.module.css';
 
 const MealsListForm = (props) => {
   return (
     <form className={classes.form}>
-      <div >
-        <label>Amount</label>
-        <input type="number" defaultValue='1' step='1' />
-      </div>
-      <button>+Add</button>
+        <Input label='Amount' input={{
+            id: 'amount',
+            type: 'number',
+            min: '1',
+            max: '5',
+            step: '1',
+            defaultValue: '1',
+        }} />
+        <button>+ Add</button>
     </form>
   );
 };
